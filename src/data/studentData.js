@@ -46,6 +46,7 @@ const studentData = [
       "age": 100,
       "bio": "In possession of the plasma shard",
       "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
+      "GPA": 3.0
   
     }
   ];
