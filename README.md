@@ -56,7 +56,7 @@ The acceptance criteria below are covered by unit tests. Notice that there are s
 
 - When I click on a student, their name appears in the class.
 - When I click on a student, their GPA appears in the class.
-  - Use `<ul>` and `<li>` elements to list the students and GPA's in the class (name and GPA in one `<li>`)
+  - Use `<ul>` and `<li>` elements to list the students and GPA's in the class (name and GPA in one `<li>`). Give the `<ul>` the class `EnrolledList`.
 - When I click on a student, the average GPA updates with the average of all students GPA's in the class.
   - Text should be: `Average GPA: 0.00` (with the correct average)
 - When I click on a student, the total number of students updates.
