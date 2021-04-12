@@ -72,7 +72,7 @@ The acceptance criteria below are covered by unit tests. Notice that there are s
   - Alert text should include: `You are the now the teacher`
 - When I complete the form with valid input and click `Teach Class`, an alert tells me the total amount of students and their average GPA.
 - When I complete the form but a piece of data is missing, an alert tells me that my input is not valid.
-  - Alert text should include: `Input is not valid`
+  - Alert text should include: `Input is invalid`
 - When I complete the form but the phone number is not 10 digits long, an alert tells me `Phone number is not valid`
 - When I complete the form but the zip code is not 5 digits long, an alert tells me `Zip code is not valid`
 
