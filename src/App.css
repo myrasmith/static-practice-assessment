@@ -1,1 +1,8 @@
+.App {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.RightSide {
+    margin-left: 40px;
+}

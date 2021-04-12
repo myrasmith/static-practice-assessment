@@ -1,0 +1,8 @@
+.FormContainer label{
+    display: block;
+}
+
+.FormContainer button {
+    display: block;
+    margin: 5px;
+}
