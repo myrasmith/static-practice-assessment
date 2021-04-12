@@ -42,7 +42,7 @@ The acceptance criteria below are covered by unit tests. Notice that there are s
 
 - I can see a section with students laid out in a grid.
   - Use the class name `Students` with css grid and `grid-template-columns`
-- I can see a `Class List` section that has `TotalStudentCount`, and `Average GPA`
+- I can see a `Roster` section that has `TotalStudentCount`, and `AverageGPA`
 - I can see a `Teacher Enrollment` section that has inputs _and labels_ for `Name`, `Subject`, `Email`, `Phone Number`, `Zip Code`, and a button that says `Teach Class`
   - Don't forget to create `<label>` elements for your inputs
 

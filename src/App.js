@@ -30,7 +30,10 @@ class App extends React.Component {
         </div>
         <div className="RightSide">
           <Roster enrolled={this.state.enrolled} average={averageGPA || 0} />
-          <Form />
+          <Form
+            enrolledCount={this.state.enrolled.length}
+            average={averageGPA || 0}
+          />
         </div>
       </div>
     );
