@@ -24,7 +24,7 @@ Create a classroom that meets the user stories below.
 
 **The students at the school are stored in the array in `data/studentData.js`. Import this and pass it to your components. Use these students and do not change any information in the array, or else the tests will fail.**
 
-![demo gif]()
+![demo gif](./practicerickandmorty.gif)
 
 ## User Stories
 
