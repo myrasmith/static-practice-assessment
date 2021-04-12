@@ -6,10 +6,10 @@ const StudentListItem = ({student, enrollStudent}) => {
     return(
         <li>
             <h3>{name}</h3>
-            <p>Age: {age}</p>
+            Age: {age}
             <img src={image} alt="student" />
             <p>Bio: {bio}</p>
-            <p>GPA: {GPA.toFixed(2)}</p>
+            GPA: {GPA.toFixed(2)}
             <button onClick={() => enrollStudent(student)}>Add To Class</button> 
         </li>
     )

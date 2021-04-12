@@ -48,7 +48,7 @@ The acceptance criteria below are covered by unit tests. Notice that there are s
 
 ### **`students.test.js`**: `I can see each student's name...`
 
-- Each student displays the name, GPA, age, photo, and bio.
+- Each student displays the name, GPA, age, image, and bio.
 - Each student has an `Add To Class` button.
   - The button text should be: `Add To Class`
 
