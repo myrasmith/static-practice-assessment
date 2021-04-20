@@ -1,0 +1,11 @@
+.StudentCard {
+  border: 1px solid green;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.StudentCard > img {
+  width: 150px;
+}

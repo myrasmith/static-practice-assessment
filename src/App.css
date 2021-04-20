@@ -1,0 +1,13 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Students {
+  grid-row: 1/3;
+}
+
+.leftSide,
+.rightSide {
+  padding: 0 20px;
+}
