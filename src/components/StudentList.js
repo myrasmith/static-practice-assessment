@@ -1,11 +1,17 @@
 import StudentCard from "./StudentCard";
 import "./StudentList.css";
 
-const StudentList = ({ students }) => {
+const StudentList = ({ students, addStudentToClass }) => {
   return (
     <section className="Students">
       {students.map((student, i) => (
-        <StudentCard {...student} key={student.id} />
+        <StudentCard
+          name={student.name}
+          GPA={student.GPA}
+          id={student.id}
+          key={student.id}
+          addStudentToClass={addStudentToClass}
+        />
       ))}
     </section>
   );

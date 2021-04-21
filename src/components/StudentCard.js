@@ -1,6 +1,7 @@
 import "./StudentCard.css";
 
 const StudentCard = (props) => {
+  console.log("PROPS.KEY IS:", props.key);
   return (
     <div className="StudentCard">
       <h3>{props.name}</h3>
@@ -8,7 +9,13 @@ const StudentCard = (props) => {
       <img src={props.image} alt={props.name} />
       <p>Bio: {props.bio}</p>
       <p>GPA: {props.GPA.toFixed(2)}</p>
-      <button>Add To Class</button>
+      <button
+        onClick={() => {
+          props.addStudentToClass(props.id);
+        }}
+      >
+        Add To Class
+      </button>
     </div>
   );
 };

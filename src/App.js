@@ -7,11 +7,11 @@ import "./App.css";
 
 /* 
 Data we need for our app to render correctly:
-  - full list of students
-  - list of enrolled students
-  - total enrolled student count
-  - average enrolled student gpa
-  - form input values
+  - full list of students: PROPS (but it's complicated)
+  - list of enrolled students: STATE
+  - total enrolled student count: PROPS
+  - average enrolled student gpa: PROPS!
+  - form input values: STATE
   
 Which of these data should be state? Keep in mind:
   1. Is it passed in from a parent via props? If so, it probably isn’t state.
@@ -30,16 +30,30 @@ Things to keep in mind:
 */
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      enrolledStudents: [],
+    };
+  }
+
+  addStudentToClass = (whatever) => {
+    console.log("adding student id " + whatever + " to the class");
+  };
+
   render() {
     const { students } = this.props;
-    const enrolledStudents = students;
+    const { enrolledStudents } = this.state;
     const averageEnrolledGPA = meanGPA(enrolledStudents).toFixed(2);
     const classSize = enrolledStudents.length;
     return (
-      <div class="App">
+      <div className="App">
         <div className="leftSide">
           <h1>Build a Class</h1>
-          <StudentList students={students} />
+          <StudentList
+            students={students}
+            addStudentToClass={this.addStudentToClass}
+          />
         </div>
         <div className="rightSide">
           <StudentEnrollment
