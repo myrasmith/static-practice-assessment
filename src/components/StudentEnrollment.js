@@ -1,5 +1,5 @@
 function StudentEnrollment(props) {
-  const { enrolled } = props;
+  const { enrolled, classSize, averageEnrolledGPA } = props;
   return (
     <section className="Roster">
       <h2>Enrolled</h2>
@@ -12,17 +12,10 @@ function StudentEnrollment(props) {
           );
         })}
       </ul>
-      <h3>Total Student Count: {enrolled.length}</h3>
-      <h3>Average GPA: {meanGPA(enrolled).toFixed(2)}</h3>
+      <h3>Total Student Count: {classSize}</h3>
+      <h3>Average GPA: {averageEnrolledGPA}</h3>
     </section>
   );
 }
-
-const meanGPA = (enrolled) => {
-  return (
-    enrolled.map((student) => student.GPA).reduce((sum, gpa) => sum + gpa, 0) /
-    enrolled.length
-  );
-};
 
 export default StudentEnrollment;
